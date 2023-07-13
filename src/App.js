@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Form from "./Components/Form";
 import Navbar from "./Components/Navbar";
@@ -31,20 +31,18 @@ function App() {
 
   return (
     <Router>
-      <>
-      <div>
-      <Navbar title="Gulsher" about="About Me" mode={mode} toggleMode={toggleMode} />
+    
+        <div>
+          <Navbar title="Text-Menuplater" about="About Me" mode={mode} toggleMode={toggleMode} />
+        </div>
         <Alert alert={alert} />
-        
-      </div>
         <div className="container">
           <Routes>
-            <Route exact path="/about" element={<About />} />
+            <Route path="/about" element={<About mode={mode} />} />
             <Route path="/" element={<Form mode={mode} showAlert={showAlert} />} />
-
           </Routes>
         </div>
-      </>
+
     </Router>
   );
 }

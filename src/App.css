@@ -36,3 +36,44 @@
     transform: rotate(360deg);
   }
 }
+.alert-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.alert {
+  position: relative;
+  padding: 1px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.alert-success {
+  background-color: #13df42;
+}
+
+.alert-error {
+  background-color: #dc3545;
+}
+
+.animated {
+  animation-duration: 0.5s;
+}
+
+.fadeIn {
+  animation-name: slideIn;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
