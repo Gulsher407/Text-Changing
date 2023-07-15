@@ -26,6 +26,7 @@ export default function Navbar({ title, about, mode, toggleMode }) {
           aria-controls="navbarSupportedContent"
           aria-expanded={isNavbarOpen}
           aria-label="Toggle navigation"
+        
         >
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -42,7 +43,7 @@ export default function Navbar({ title, about, mode, toggleMode }) {
               </Link>
             </li>
           </ul>
-          <div className={`form-check form-switch text-${mode === 'dark' ? 'light' : 'dark'}`}>
+          <div className={`form-check form-switch text-${mode === 'dark' ? 'light' : 'dark'}`}  style={{ marginLeft: "auto" }} >
             <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault" onClick={toggleMode} />
             <label className="form-check-label justify-end" htmlFor="flexSwitchCheckDefault">
               Dark Mode enable

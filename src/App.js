@@ -41,6 +41,7 @@ function App() {
             <Route path="/about" element={<About mode={mode} />} />
             <Route path="/" element={<Form mode={mode} showAlert={showAlert} />} />
           </Routes>
+              
         </div>
 
     </Router>

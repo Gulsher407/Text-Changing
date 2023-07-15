@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./Footer";
 
 export default function About(props) {
   const headerStyle = {
@@ -120,6 +121,7 @@ export default function About(props) {
           </div>
         </div>
       </div>
+         <Footer    mode={props.mode}  />
     </div>
   );
 }
